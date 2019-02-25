@@ -8,6 +8,9 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     "gatsby-plugin-sass",
     "gatsby-plugin-catch-links",
+    "gatsby-transformer-remark",
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -15,8 +18,13 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/src/pages`,
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
