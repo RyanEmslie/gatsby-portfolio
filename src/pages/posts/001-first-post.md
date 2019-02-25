@@ -1,6 +1,6 @@
 ---
 title: "First Post - Introduction"
-date: 2019-2-24
+date: "2019-02-20"
 author: "Ryan Emslie"
 path: "/first-post"
 ---

@@ -6,9 +6,11 @@ const Post = ({ title, author, path, date, body }) => {
   return (
     <Card>
       <CardBody>
-        <CardTitle>{title}</CardTitle>
+        <CardTitle>
+          <Link to={path}>{title}</Link>
+        </CardTitle>
         <CardSubtitle>
-          <span className="text-info">{date}</span> by
+          <span className="text-info">{date}</span> by{" "}
           <span className="text-info">{author}</span>
         </CardSubtitle>
         <CardText>{body}</CardText>
